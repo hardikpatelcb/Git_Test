@@ -27,7 +27,7 @@ jobs:
         uses: actions/upload-artifact@v4.6.0
         with:
           name: my-artifact
-          path: ${{github.workspace}}
+          path: ./README.md
 
   test:
     runs-on: ubuntu-latest

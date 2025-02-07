@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v4
@@ -30,11 +30,11 @@ jobs:
           path: ${{github.workspace}}
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: build
 environment: TEST
 
-   name: test-artifact
+   name: 
   uses: actions/download-artifact@v4.1.8
   with:
     # Name of the artifact to download. If unspecified, all artifacts for the run are downloaded.

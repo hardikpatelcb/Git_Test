@@ -34,7 +34,7 @@ jobs:
     needs: build
 environment: TEST
 
-   name: my-artifact
+   name: test-artifact
   uses: actions/download-artifact@v4.1.8
   with:
     # Name of the artifact to download. If unspecified, all artifacts for the run are downloaded.
